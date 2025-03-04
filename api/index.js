@@ -12,7 +12,7 @@ app.use(cors({
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization"
 }));
-// app.use(express.json());
+app.use(express.json());
 
 // Available Routes
 app.use("/api/auth", require("../routes/auth"));
