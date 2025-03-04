@@ -25,9 +25,10 @@ app.use("/api/notes", require("./routes/notes"));
 app.use(express.static(__dirname + "/public"));
 app.use("/public", express.static(__dirname + "/public"));
 app.get("/", (req, res) => {
-  res.render("index");
+  res.json({ message: "API is running on Vercel!" });
 });
 
 app.listen(process.env.PORT || port, () => {
   console.log(`Cred-Wallet backend listening at http://localhost:${port}`);
 });
+module.exports = app;
