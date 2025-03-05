@@ -16,6 +16,6 @@
   "functions": {
     "/(.*)": {
       "maxDuration": 5
-    }
-    }
-  }
+    }
+  }
+}
